@@ -38,7 +38,6 @@ public class MainController {
         return tripList;
     }
 
-
     @GetMapping("/u/{text}")
     public Map<String, String> getOne(@PathVariable String text) {
         Trip trip =  tripRepo.findByNumberTrip(text);
