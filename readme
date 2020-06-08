@@ -1,0 +1,3 @@
+Операционная система windows
+База данных h2, url=jdbc:h2:~/test 
+Для запуска использовать Spring boot configuration
