@@ -17,6 +17,7 @@ create table TRIP
     TRIP_NUMBER VARCHAR(255)
 );
 
+
 Insert into places (id, PLACE_CODE,PLACE_VALUE) values ( 1,'R_SAMARA','Самара, Россия' );
 Insert into places (id, PLACE_CODE,PLACE_VALUE) values ( 2,'R_MOSCOW','Москва, Россия' );
 Insert into places (id, PLACE_CODE,PLACE_VALUE) values ( 3,'R_Orenburg','Оренбург, Россия' );
