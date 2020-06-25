@@ -6,12 +6,11 @@ Vue.component('todo-item', {
     data: function(){
         return {
             text:'',
-            error:'',
+            error:null,
         }
     },
     methods:{
         save: function() {
-            var id = {text: this.text};
             this.$http.get('http://localhost:8080/message/u/' + this.text).then(result=>result.json().then(data=>{
                 if(data ==null){
                     this.error='Нет информации по данному рейсу';
@@ -19,6 +18,7 @@ Vue.component('todo-item', {
                 else{
                     this.messages=[];
                     this.messages.push(data);
+                    this.error=null;
                 }
                 console.log(data);
             }));
